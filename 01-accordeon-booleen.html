@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon avec des booléens</title>
-  </head>
-  <body>
-    <h1>Accordéon avec des booléens</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordéon avec des booléens</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+  <h1>Accordéon avec des booléens</h1>
+  <div class="accordeon">
+    <section x-data="{open:true}">
+      <button @click="open = !open">bouton 1</button>
+      <p x-show="open==true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, commodi aliquid harum
+        recusandae eaque saepe dolores sed ex qui. Facilis veritatis explicabo eius veniam a repudiandae earum aperiam,
+        vitae qui.</p>
+    </section>
+    <section x-data="{open:true}">
+      <button @click="open = !open">bouton 2</button>
+      <p x-show="open==true">Minus voluptas minima fugiat quam illo dicta nobis enim odio doloribus cumque. Ab
+        necessitatibus enim pariatur, asperiores voluptate harum magni distinctio odit! Expedita inventore nesciunt
+        veritatis excepturi? Natus, laudantium amet!</p>
+    </section>
+    <section x-data="{open:true}">
+      <button @click="open = !open">bouton 3</button>
+      <p x-show="open==true">Quisquam tempore doloremque minus totam, magni consectetur? Pariatur consectetur fugiat
+        asperiores dignissimos velit commodi nisi blanditiis quis iure illum, non incidunt iste quam ipsa. Laborum
+        voluptate mollitia provident dignissimos! Ipsam.</p>
+    </section>
+  </div>
+</body>
+
 </html>
