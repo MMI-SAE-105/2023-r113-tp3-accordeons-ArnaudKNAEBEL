@@ -14,25 +14,23 @@
   <div class="accordeon" x-data="{open: 0}">
     <section>
       <button @click="open = 1">bouton 1</button>
-      <p x-show="open== 1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, commodi aliquid harum
-        recusandae
-        eaque saepe dolores sed ex qui. Facilis veritatis explicabo eius veniam a repudiandae earum aperiam, vitae qui.
-      </p>
+      <p x-show="open== 1" x-transition.scale.origine.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+        commodi aliquid harum recusandae eaque saepe dolores sed ex qui. Facilis veritatis explicabo eius veniam a
+        repudiandae
+        earum aperiam, vitae qui.</p>
     </section>
     <section>
       <button @click="open = 2">bouton 2</button>
-      <p x-show="open== 2">Minus voluptas minima fugiat quam illo dicta nobis enim odio doloribus cumque. Ab
-        necessitatibus
-        enim pariatur, asperiores voluptate harum magni distinctio odit! Expedita inventore nesciunt veritatis
-        excepturi?
-        Natus, laudantium amet!</p>
+      <p x-show="open== 2" x-transition.scale.origine.top>Minus voluptas minima fugiat quam illo dicta nobis enim odio
+        doloribus cumque. Ab necessitatibus enim pariatur, asperiores voluptate harum magni distinctio odit! Expedita
+        inventore nesciunt veritatis excepturi? Natus, laudantium amet!</p>
     </section>
     <section>
       <button @click="open = 3">bouton 3</button>
-      <p x-show="open== 3">Quisquam tempore doloremque minus totam, magni consectetur? Pariatur consectetur fugiat
-        asperiores dignissimos velit commodi nisi blanditiis quis iure illum, non incidunt iste quam ipsa. Laborum
-        voluptate
-        mollitia provident dignissimos! Ipsam.</p>
+      <p x-show="open== 3" x-transition.scale.origine.top>Quisquam tempore doloremque minus totam, magni consectetur?
+        Pariatur
+        consectetur fugiat asperiores dignissimos velit commodi nisi blanditiis quis iure illum, non incidunt iste quam
+        ipsa.Laborum voluptate mollitia provident dignissimos! Ipsam.</p>
     </section>
 </body>
 
