@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Accordéon horizontal</title>
   <link rel="stylesheet" href="accordeon04.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
   <h1>Accordéon horizontal</h1>
-  <ul id="accordeon">
-    <li>
+  <ul id="accordeon" x-data="{isOpen:0}">
+    <li :class="{actif:isOpen === 1,} " @click="isOpen=(isOpen === 1)?0:1">
       <figure>
         <img src="https://picsum.photos/100?random=1" alt="" width="102">
         <figcaption>
@@ -21,7 +22,7 @@
         </figcaption>
       </figure>
     </li>
-    <li>
+    <li :class="{actif:isOpen === 2,}" @click="isOpen=(isOpen === 2)?0:2">
       <figure>
         <img src="https://picsum.photos/100?random=2" alt="" width="102">
         <figcaption>
@@ -30,14 +31,14 @@
         </figcaption>
       </figure>
     </li>
-    <li>
-      <figure>
-        <img src="https://picsum.photos/100?random=3" alt="" width="102">
-        <figcaption>
-          <h3>Qui, illum vel.</h3>
-          <p>Doloremque voluptatum accusamus aliquid facere expedita?</p>
-        </figcaption>
-      </figure>
+    <li :class="{actif:isOpen === 3,} " @click="isOpen=(isOpen ===3)?0:3"></li>
+    <figure>
+      <img src="https://picsum.photos/100?random=3" alt="" width="102">
+      <figcaption>
+        <h3>Qui, illum vel.</h3>
+        <p>Doloremque voluptatum accusamus aliquid facere expedita?</p>
+      </figcaption>
+    </figure>
     </li>
   </ul>
 </body>
