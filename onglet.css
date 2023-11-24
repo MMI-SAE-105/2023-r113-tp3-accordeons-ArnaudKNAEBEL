@@ -1,0 +1,12 @@
+.panneau_parent {
+    position: relative;
+}
+
+.panneau_enfant {
+    position: absolute;
+    opacity: 0;
+}
+
+.panneau_enfant.actif {
+    opacity: 1;
+}
