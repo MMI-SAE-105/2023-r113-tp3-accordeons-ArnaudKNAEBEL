@@ -10,3 +10,7 @@
 .panneau_enfant.actif {
     opacity: 1;
 }
+
+.actif {
+    background-color: #e3d;
+}
